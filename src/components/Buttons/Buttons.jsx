@@ -8,7 +8,7 @@ export function Buttons({ options, onAddFdbck }) {
       {options.map(stan => {
         return (
           <li key={stan}>
-            <button type="button" onClick={onAddFdbck(stan)}>
+            <button type="button" onClick={onAddFdbck} name={stan}>
               {stan === options[0] ? '😊' : stan === options[1] ? '😑' : '😞'}
             </button>
           </li>
